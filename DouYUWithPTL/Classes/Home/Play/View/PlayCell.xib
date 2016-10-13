@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DY2-8h-vQ9" customClass="PlayCell" customModule="DouYUWithPTL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="2mI-Ft-SAI">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-Yi-5U4">
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="0.51629849139999995" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="gkp-WN-A36"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" image="Image_online"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-03-cbY">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="SMF-GC-5kU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="风格大方和东方红" image="Image_online"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱你一万年" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9o-s2-sjK">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="VUL-rX-E7G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="U9o-s2-sjK" firstAttribute="leading" secondItem="DY2-8h-vQ9" secondAttribute="leading" id="2Uh-hh-bet"/>
+                <constraint firstItem="U9o-s2-sjK" firstAttribute="top" secondItem="Rhp-03-cbY" secondAttribute="bottom" constant="7" id="ADt-av-URy"/>
+                <constraint firstAttribute="trailing" secondItem="2mI-Ft-SAI" secondAttribute="trailing" id="Gma-Ui-vLw"/>
+                <constraint firstItem="2mI-Ft-SAI" firstAttribute="top" secondItem="DY2-8h-vQ9" secondAttribute="top" id="Hvx-EC-4ur"/>
+                <constraint firstItem="2mI-Ft-SAI" firstAttribute="leading" secondItem="DY2-8h-vQ9" secondAttribute="leading" id="Kht-xT-VJm"/>
+                <constraint firstAttribute="trailing" secondItem="1SQ-Yi-5U4" secondAttribute="trailing" id="W3g-O9-jCU"/>
+                <constraint firstItem="Rhp-03-cbY" firstAttribute="leading" secondItem="DY2-8h-vQ9" secondAttribute="leading" constant="5" id="Xj5-C3-GJs"/>
+                <constraint firstAttribute="bottom" secondItem="U9o-s2-sjK" secondAttribute="bottom" constant="8" id="clq-vw-eP5"/>
+                <constraint firstItem="1SQ-Yi-5U4" firstAttribute="top" secondItem="DY2-8h-vQ9" secondAttribute="top" id="dDv-y3-4Qf"/>
+                <constraint firstAttribute="trailing" secondItem="U9o-s2-sjK" secondAttribute="trailing" id="hVR-z1-rOu"/>
+                <constraint firstItem="U9o-s2-sjK" firstAttribute="top" secondItem="2mI-Ft-SAI" secondAttribute="bottom" constant="5" id="ljd-k1-bVa"/>
+            </constraints>
+            <size key="customSize" width="253" height="149"/>
+            <connections>
+                <outlet property="nickname" destination="Rhp-03-cbY" id="UTw-Yj-N3O"/>
+                <outlet property="onlineNumbel" destination="1SQ-Yi-5U4" id="JhJ-6g-tfG"/>
+                <outlet property="roomImage" destination="2mI-Ft-SAI" id="Oeb-fo-KqQ"/>
+                <outlet property="room_name" destination="U9o-s2-sjK" id="K4j-jW-Jyy"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-146.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewGameCell" customModule="DouYUWithPTL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tQ-zi-8XH">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="lID-vv-dnT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cmp-er-Ynw">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="TCS-dg-9os"/>
+                            <constraint firstAttribute="width" constant="45" id="yqx-wn-UVY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3tQ-zi-8XH" firstAttribute="top" secondItem="cmp-er-Ynw" secondAttribute="bottom" id="C29-J5-OOl"/>
+                <constraint firstItem="3tQ-zi-8XH" firstAttribute="centerX" secondItem="cmp-er-Ynw" secondAttribute="centerX" id="XRZ-e1-SoV"/>
+                <constraint firstAttribute="bottom" secondItem="3tQ-zi-8XH" secondAttribute="bottom" constant="10" id="czh-9C-iim"/>
+                <constraint firstItem="3tQ-zi-8XH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="srG-X8-XbT"/>
+                <constraint firstAttribute="trailing" secondItem="3tQ-zi-8XH" secondAttribute="trailing" id="zLd-bR-P6k"/>
+            </constraints>
+            <size key="customSize" width="87" height="108"/>
+            <connections>
+                <outlet property="imageIconView" destination="cmp-er-Ynw" id="hdD-Cm-Kvu"/>
+                <outlet property="titleLabel" destination="3tQ-zi-8XH" id="vxA-dq-RXl"/>
+            </connections>
+            <point key="canvasLocation" x="78.5" y="79"/>
+        </collectionViewCell>
+    </objects>
+</document>

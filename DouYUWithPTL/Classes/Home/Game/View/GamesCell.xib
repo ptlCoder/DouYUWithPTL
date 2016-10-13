@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GamesCell" customModule="DouYUWithPTL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="102" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="102" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pex-ng-y4V">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="N6j-7g-nng"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEP-ZW-E2Y">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A56-l1-951">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="L6t-vT-3LE"/>
+                            <constraint firstAttribute="height" constant="45" id="l2B-0c-uik"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="A56-l1-951" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="5we-ii-T5g"/>
+                <constraint firstAttribute="bottom" secondItem="Pex-ng-y4V" secondAttribute="bottom" id="69D-GP-d0T"/>
+                <constraint firstItem="LEP-ZW-E2Y" firstAttribute="centerX" secondItem="A56-l1-951" secondAttribute="centerX" id="AkP-gc-3VY"/>
+                <constraint firstItem="Pex-ng-y4V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C4g-Ah-3C9"/>
+                <constraint firstItem="Pex-ng-y4V" firstAttribute="top" secondItem="LEP-ZW-E2Y" secondAttribute="bottom" constant="20" id="WPA-T6-P0J"/>
+                <constraint firstAttribute="trailing" secondItem="LEP-ZW-E2Y" secondAttribute="trailing" constant="8" id="ccr-ad-DFh"/>
+                <constraint firstAttribute="trailing" secondItem="Pex-ng-y4V" secondAttribute="trailing" id="dOC-HN-cYo"/>
+                <constraint firstItem="LEP-ZW-E2Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="l8t-0v-QwE"/>
+                <constraint firstItem="LEP-ZW-E2Y" firstAttribute="top" secondItem="A56-l1-951" secondAttribute="bottom" constant="5" id="rxi-GS-xhI"/>
+            </constraints>
+            <size key="customSize" width="102" height="113"/>
+            <connections>
+                <outlet property="imageIconView" destination="A56-l1-951" id="vdo-AU-onB"/>
+                <outlet property="nameLabel" destination="LEP-ZW-E2Y" id="VNr-QE-Sxv"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="34.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
